@@ -17,36 +17,17 @@
 
 // let button = document.getElementById("button");
 
-let button_next = document.getElementById('button_next').onclick = login;
-let data_input = document.getElementById('data_input');
 
-function login(){
-    let data_input = document.getElementById('data_input').value;
-    let latin = 'qwertyuiopasdfghjklzxcvbnm'
-    
-    // for (i of latin) {
-    //     i = i.split()
-    //     // console.log(i)
-    //     for (item of data_input) {
-    //         item = item.split()
-    //         // console.log(item)
-    //         // console.log(data_input[0])
-    //         console.log(item)
-            
-    //     }
-    
-    // }
+let click = document.getElementById('menu').onclick = clone
+let parent = document.getElementById('author_main');
 
-    console.log( data_input );
-    
-    // for (i of latin) {
-        
-    // }
-    // for (item of data_input) {
-       
-
-    // }
-    
+function clone(){
+    for (i=0; i<5; i++) {
+        let elem = parent.querySelector('.author_block');
+        let clone = elem.cloneNode(true);
+        parent.appendChild(clone)
+        console.log(clone);
+    }
 }
 // var ar = ['qwertyuiopasdfghjklzxcvbnm'];
 // var sum = 0;
