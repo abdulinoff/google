@@ -79,6 +79,9 @@
   .header_block{
     display: none;
   }
+  .menu_plus{
+    display: grid;
+  }
   .menu_ico_plus{
     height: 30px;
   }
