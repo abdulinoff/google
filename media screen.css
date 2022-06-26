@@ -4,6 +4,9 @@
     flex-wrap: wrap;
     grid-template-columns: none;
 }
+  .menu_plus{
+    display: none;
+}
 }
 @media screen and (max-width: 1312px){
   .menu_block{
@@ -26,6 +29,9 @@
     margin: 0 auto;
     justify-content: center;
   }
+  .menu_plus{
+    display: none;
+  }
   .menu_text{
     margin: 0 auto;
     font-size: 10px;
@@ -35,6 +41,9 @@
   .author_main{
     grid-template-columns: 1fr 1fr 1fr;
 }
+  .menu_plus{
+    display: none;
+  }
 }
 @media screen and (max-width: 650px) {
   .author_main{
@@ -42,13 +51,11 @@
   }
 }
 @media screen and (max-width: 480px) {
-  body{
-    background: #262626;
-  }
   .author_main{
     grid-template-columns: 1fr;
     padding: 0;
     gap: 0;
+    padding: 0 0 50px 0;
   }
   .author_video_block{
     max-width: 100%;
@@ -61,6 +68,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+   
   }
   .menu_block{
     position:fixed;
@@ -72,6 +80,7 @@
     width: 100%;
   }
   .menu_list{
+    height: 50px;
     display: flex;
     justify-content: space-evenly;
     padding: 6px 0;
@@ -80,7 +89,7 @@
     display: none;
   }
   .menu_plus{
-    display: grid;
+    display: flex;
   }
   .menu_ico_plus{
     height: 30px;
