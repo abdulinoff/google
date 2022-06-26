@@ -6,10 +6,31 @@
 }
 }
 @media screen and (max-width: 1312px){
-  .menu{
+  .menu_block{
     width: 70px;
   }
-}
+  .menu_list{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .menu{
+    display: grid;
+    padding: 10px 0;
+    gap: 10px;
+
+  }
+  .menu_ico{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .menu_text{
+    margin: 0 auto;
+    font-size: 10px;
+  }
+
 @media screen and (max-width: 1127px) {
   .author_main{
     grid-template-columns: 1fr 1fr 1fr;
@@ -21,7 +42,65 @@
   }
 }
 @media screen and (max-width: 480px) {
+  body{
+    background: #262626;
+  }
   .author_main{
     grid-template-columns: 1fr;
+    padding: 0;
+    gap: 0;
   }
+  .author_video_block{
+    max-width: 100%;
+  }
+  .menu{
+    padding: 0;
+    gap: 2px;
+  }
+  .menu_author_block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu_block{
+    position:fixed;
+    bottom:0;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+    height: max-content;
+    width: 100%;
+  }
+  .menu_list{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 6px 0;
+  }
+  .header_block{
+    display: none;
+  }
+  .menu_ico_plus{
+    height: 30px;
+  }
+  .author_video_block:hover .author_video_preview_img{
+    background: none;
+    opacity: 1;
+  }
+  .author_block:hover{
+    background: #3a3a3a;
+  }
+  .author_video_block{
+    gap: 0;
+  }
+  .author_logo_info_block{
+    padding: 10px 10px 30px 10px;
+  }
+  .author_title_info_block{
+    gap: 5px;
+  }
+  .author_name_channel_info_block{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 }
