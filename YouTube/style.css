@@ -24,6 +24,7 @@ h1{
   font-size: 14px;
 }
 h2{
+  display: block;
   font-size: 13px;
   opacity: 0.5;
   font-weight: normal;
@@ -62,16 +63,46 @@ h3{
   background: #212121;
   border-bottom: 1px solid #383838;
 }
+.menu_burger{
+  z-index: 101;
+  position: absolute;
+  width: 70px;
+  justify-content: center;
+  align-items: center;
+}
+.menu_burger_img{
+  height: 20px;
+}
 .menu_author_block{
   display: flex;
 }
 .menu_block{
-  margin: -110px 0 0 0;
-}
-.menu{
   background: #212121;
   width: 280px;
   height: 500px;
+  margin: -110px 0 0 0;
+  padding: 55px 0 0 0;
+}
+.menu_list{
+  padding: 15px 0;
+  border-bottom: 1px solid #383838;
+}
+.menu{
+  display: flex;
+  align-items: flex-end;
+  gap: 25px;
+  align-items: center;
+  padding: 10px 0 10px 27.5px;
+  width: 70px;
+}
+.menu:hover{
+  background: #3a3a3a;
+}
+.menu_ico{
+  height: 20px;
+}
+.menu_text{
+  font-weight: normal;
 }
 .author_main{
   display: grid;
