@@ -96,11 +96,12 @@ h3{
   display: flex;
 }
 .menu_block{
-  display: block;
   background: #212121;
+  
   width: 280px;
   margin: -110px 0 0 0;
   padding: 55px 0 0 0;
+
 }
 .menu_list{
   padding: 15px 0;
@@ -112,7 +113,8 @@ h3{
   gap: 25px;
   align-items: center;
   padding: 10px 0 10px 27.5px;
-  width: 70px;
+
+
 }
 .menu_a:hover{
   background: #3a3a3a;
