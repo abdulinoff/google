@@ -33,7 +33,7 @@ h3{
   font-size: 12px;
 }
 .but{
-  position: fixed;
+  position: absolute;
   bottom: 0;
   padding: 10px 20px;
   margin: 60px;
@@ -41,6 +41,9 @@ h3{
   transition: 0.15s;
   font-family: Calibri;
   font-weight: bold;
+}
+#menu2{
+  margin: 120px;
 }
 .but:hover{
   background: #812222;
