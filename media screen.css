@@ -17,12 +17,13 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+
   }
   .menu{
     display: grid;
     padding: 10px 0;
     gap: 10px;
-
+    width: 70px;
   }
   .menu_ico{
     display: flex;
@@ -69,7 +70,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-   
   }
   .menu_block{
     position:fixed;
