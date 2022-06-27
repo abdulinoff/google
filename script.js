@@ -6,7 +6,7 @@ function generatorRandomInt(max) {
 clone()
 function clone() {
     let i = 2
-    for (let n=0; n<5; n++) {
+    for (let n=0; n<12; n++) {
         let parent = document.getElementById('author_main');
         let elem = parent.querySelector('.author_block_1');
         let clone = elem.cloneNode(true);
