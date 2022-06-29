@@ -3,36 +3,60 @@ function generatorRandomInt(max) {
     return generatorrandomint;
 }
 
+function random() {
+    let random = ""
+    for (let i = 0; i < 6; i++){
+        let possible = 'abdulinoff'
+        random += possible.charAt(Math.floor(Math.random() * possible.length));
+    }
+    return random;
+}
+
+delimiter()
+function delimiter() {
+    let title_h1 = document.getElementById('title_h1').innerHTML
+
+    if(title_h1.length > 62){
+        division = title_h1.length - 61
+        let text = title_h1.substring(0, title_h1.length - division);
+        document.getElementById('title_h1').innerHTML = text + "..."  ;
+        console.log(text.length)
+    }
+}
 clone()
 function clone() {
-    let i = 2
     for (let n=0; n<12; n++) {
-        let parent = document.getElementById('author_main');
-        let elem = parent.querySelector('.author_block_1');
+        let parent = document.getElementById('main');
+        let elem = parent.querySelector('.single');
         let clone = elem.cloneNode(true);
         clone = parent.appendChild(clone);
-        clone = clone.className = 'author_block_' + i
-        i++
     }
+}
+
+time()
+function time(){
+    let author_duration = document.querySelectorAll('.time_h3');
+    author_duration.forEach((el, i) => el.textContent = generatorRandomInt(60) + ':' + generatorRandomInt(60));
 }
 
 nickname()
 function nickname(){
-    let author_name_channel_h2 = document.querySelectorAll('.author_name_channel_h2');
+    let author_name_channel_h2 = document.querySelectorAll('.brand_h2');
     author_name_channel_h2 = author_name_channel_h2.forEach((el, i) => el.textContent = random());
 }
 
 views()
 function views(){
-    let author_views_h2 = document.querySelectorAll('.author_views_h2');
+    let author_views_h2 = document.querySelectorAll('.views_h2');
     author_views_h2.forEach((el, i) => el.textContent = generatorRandomInt(999) + ' тыс. просмотров');
 }
-
-time()
-function time(){
-    let author_duration = document.querySelectorAll('.author_duration');
-    author_duration.forEach((el, i) => el.textContent = generatorRandomInt(24) + ':' + generatorRandomInt(60));
+realease()
+function realease(){
+    let author_realease_h2 = document.querySelectorAll('.release_h2');;
+    author_realease_h2 = author_realease_h2.forEach((el, i) => el.textContent = ' ᠌ ᠌• ᠌' + generatorRandomInt(12) + ' минуты назад')
 }
+
+
 
 // realease()
 // function realease(){
@@ -131,24 +155,9 @@ function time(){
 //         }
 //     }
 // }
-realease()
-function realease(){
-    let author_realease_h2 = document.querySelectorAll('.author_realease_h2');;
-    author_realease_h2 = author_realease_h2.forEach((el, i) => el.textContent = ' ᠌ ᠌• ᠌' + generatorRandomInt(12) + ' минуты назад')
-}
 
-
-function random() {
-    let random = ""
-    for (let i = 0; i < 6; i++){
-        let possible = 'abdulinoff'
-        random += possible.charAt(Math.floor(Math.random() * possible.length));
-    }
-    return random;
-}
-
-let button_next = document.getElementById('menu').onclick = clone;
-let button_next2 = document.getElementById('menu2').onclick = replaceClass;
+// let button_next = document.getElementById('menu').onclick = clone;
+// let button_next2 = document.getElementById('menu2').onclick = replaceClass;
 
 
 
