@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: Roboto;
+  transition: all 0.5s;
+}
+body {
+  background: #181818;
+}
+img{
+  display: grid;
+  width: 100%;
+}
+div{
+  display: grid;
+}
+h1{
+  font-size: 16px;
+  font-weight: 500;
+}
+h2{
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+h3{
+  font-size: 12px;
+  font-weight: 500;
+}
+::-webkit-scrollbar {
+  width: 16px;
+}
+::-webkit-scrollbar-thumb {
+  background: #aaaaaa;
+  border-radius: 20px;
+  border: 4px solid #181818;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #717171;
+}
+@media screen and (min-width: 3840px) {
+  .main{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 50px;
+  }
+}
+@media screen and (min-width: 3840px) {
+  .main{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .main{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .main .single{
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1127px) {
+  .menu{
+    width: 70px;
+  }
+  .main{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 650px) {
+
+  .main{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main{
+    grid-template-columns: 1fr;
+  }
+}
